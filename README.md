@@ -10,7 +10,7 @@ The full project is intended to run on an Raspberry Pi 5, but should work on any
 - **WARNING**: I take no responsibility if you run any of this code on your own drone. You do so at your own risk.
 
 ### Getting Started
-First, install the ultralytics package from https://docs.ultralytics.com/guides/raspberry-pi/#start-with-docker into your environment.
+First, install the ultralytics package from https://docs.ultralytics.com/guides/raspberry-pi/ into your environment.
 
 Next step, you need to install dependency packages on your environment.In the first, open your termial and run:
 ```bash
