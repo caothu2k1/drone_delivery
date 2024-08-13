@@ -1,0 +1,9 @@
+MIN_OBJECT_Z = 3 # Minimum distance to objects in meters
+MIN_LANDING_PAD_XY = 0.2 # Minimum distance with x,y exis to objects in meters
+MIN_OBJECT_XY = 2 # Minimum distance with x,y exis to objects in meters
+MAX_ANGLE_GIMBAL = -10 # Maximum angle gimbal
+MIN_ANGLE_GIMBAL = -90 # Minimum angle gimbal
+CLOSED_ANGLE_LID = 90 # Minimum angle gimbal
+OPEN_ANGLE_LID = -90
+DISTANCE_LAND = 1 # Distance to land in meters
+SPEED = 2 # Speed of drone in m/s
