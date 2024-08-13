@@ -40,7 +40,7 @@ python models/test.py
 ### Distance measurement 
 ---
 <br>
-| <img src="/StereoVision/object_detection_1M.png">| <img src="/StereoVision/object_detection_3M.png">|
+| <img src="/StereoVision/object_detection_1M.png"/>| <img src="/StereoVision/object_detection_3M.png"/>|
 ----
 <br>
 
