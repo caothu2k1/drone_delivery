@@ -38,6 +38,6 @@ python models/test.py
 <img src = "/StereoVision/SGBM.jpg">
 
 ### Distance measurement 
-| <img src="/StereoVision/object_detection_1M.png"/>| <img src="/StereoVision/object_detection_3M.png"/>|
+| <img src="/StereoVision/object_detection_1M.png">| <img src="/StereoVision/object_detection_3M.png">|
 
 
