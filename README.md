@@ -35,12 +35,17 @@ Next, run the `test.py` file to test
 python models/test.py
 ```
 ### Stereo Vision
-<img src = "/StereoVision/SGBM.jpg">
+<img src = "/StereoVision/SGBM.jpg"> 
 
-### Distance measurement 
-<img src="/Documentation/images/preview_proot.jpg"/> | <img src="/Documentation/images/preview_native.jpg"/>| <img src="/Documentation/images/preview_chroot.jpg"/>|
+<br>
+### Distance measurement
 
-| <img src="/StereoVision/object_detection_1M.png"/>| <img src="/StereoVision/object_detection_3M.png"/>|
+|---------------------------------------------|---------------------------------------------|
+| <img src="/StereoVision/object_detection_1M.png"/> | <img src="/StereoVision/object_detection_3M.png"/>|
+
+---  
+<br>
+
 
 
 
