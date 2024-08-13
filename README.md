@@ -36,3 +36,8 @@ python models/test.py
 ```
 ### Stereo Vision
 <img src = "https://github.com/caothu2k1/drone_delivery/blob/master/StereoVision%2FSGBM.jpg">
+
+### Distance measurement 
+<img src="/Documentation/images/preview_proot.jpg"/> | <img src="/Documentation/images/preview_native.jpg"/>| <img src="/Documentation/images/preview_chroot.jpg"/>
+
+
