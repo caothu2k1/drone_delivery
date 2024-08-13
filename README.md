@@ -35,4 +35,4 @@ Next, run the `test.py` file to test
 python models/test.py
 ```
 ### Stereo Vision
-!https://github.com/caothu2k1/drone_delivery/blob/master/StereoVision%2FSGBM.jpg
+<img src = "https://github.com/caothu2k1/drone_delivery/blob/master/StereoVision%2FSGBM.jpg">
