@@ -39,7 +39,7 @@ python models/test.py
 
 <br>
 ### Distance measurement
-
+| Proot distro (Debian) | Native |
 |---------------------------------------------|---------------------------------------------|
 | <img src="/StereoVision/object_detection_1M.png"/> | <img src="/StereoVision/object_detection_3M.png"/>|
 
