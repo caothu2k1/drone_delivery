@@ -35,9 +35,9 @@ Next, run the `test.py` file to test
 python models/test.py
 ```
 ### Stereo Vision
-<img src = "https://github.com/caothu2k1/drone_delivery/blob/master/StereoVision%2FSGBM.jpg">
+<img src = "/StereoVision/SGBM.jpg">
 
 ### Distance measurement 
-|<img src="https://github.com/caothu2k1/drone_delivery/blob/master/StereoVision%2Fobject_detection_1M.png"/> | <img src="https://github.com/caothu2k1/drone_delivery/blob/master/StereoVision%2Fobject_detection_3M.png"/>|
+| <img src="/StereoVision/object_detection_1M.png"/>| <img src="/StereoVision/object_detection_3M.png"/>|
 
 
