@@ -38,6 +38,6 @@ python models/test.py
 <img src = "https://github.com/caothu2k1/drone_delivery/blob/master/StereoVision%2FSGBM.jpg">
 
 ### Distance measurement 
-<img src="https://github.com/caothu2k1/drone_delivery/blob/master/StereoVision%2Fobject_detection_1M.png/> <img src="/https://github.com/caothu2k1/drone_delivery/blob/master/StereoVision%2Fobject_detection_1M.png"/>
+<img src="https://github.com/caothu2k1/drone_delivery/blob/master/StereoVision%2Fobject_detection_1M.png/> | <img src="https://github.com/caothu2k1/drone_delivery/blob/master/StereoVision%2Fobject_detection_3M.png"/>
 
 
