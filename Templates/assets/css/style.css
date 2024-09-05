@@ -1,0 +1,204 @@
+#map {
+    height: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#search {
+    position: absolute;
+    top: 10px;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+#searchInput {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#monitoring-table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    z-index: 1000;
+}
+#tabs {
+    display: flex;
+}
+.hidden{
+    display: none;
+}
+.tab-item {
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    background-color:rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.tab-item:hover {
+    background-color: #777;
+}
+
+.active {
+    color: #000;
+    font-weight: bold;
+    background-color: #fff;
+}
+#monitoring-table th,
+#monitoring-table td {
+    padding: 13px;
+    color: #ffffff;
+}
+
+.form-input{
+    color: #fff;
+    height: 80px;
+    padding-left:10px;
+    font-size: 13px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 5px 10px;
+}
+#display-wp {
+    max-height: 350px;
+    overflow-y: auto;
+}
+.title i{
+    color: rgba(114, 104, 104, 0.6) ;
+}
+.options button{
+    background: none;
+    border: none;
+    color: rgb(249, 248, 248) ;
+}
+.title i:hover{
+    color: #fff;
+}
+.options button:hover{
+    color:rgba(0,0,0,0.5);
+}
+.form-input input{
+    width: 100%;
+    font-size: 12px;    
+    border-radius: 5px;
+    border: none;
+    background: none;
+    color: rgb(249, 248, 248) ;
+}
+.totalalt{
+    margin-left: 10px;
+    color: #fff;
+}
+.corner-image {
+    margin: 20px 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    height: 240px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #fff;
+    background-image: url("/Templates/assets/img/empty.jpg"); /* Replace with your image path */
+    background-size: cover; /* Ensures image fills the container */
+  }
+.icon-bar {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    background: #fff;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    align-items: center;
+}
+.icons .name {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+}
+.icon-bar .icons,
+.icon-bar #state {
+    text-decoration: none;
+    padding: 5px 25px;
+    display: block;
+}
+.icon-bar .icons img,
+.icon-bar #state img {
+    height: 40px;
+    width: 40px;
+    filter: invert(93%) sepia(100%) saturate(26%) hue-rotate(30deg) brightness(106%) contrast(107%);
+}
+.icons img:hover{
+    transform: scale(1.4);
+}
+
+.popup_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup_box i {
+    font-size: 2em;
+    color: rgb(238, 153, 7);
+}
+.popup_box label{
+    font-size: 18px;
+    color: #e9d1d1e0;
+  }
+.popup_box .btns button {
+    margin-top: 10px;
+    padding: 5px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup_box .btns .btn1 {
+    background-color: #f00;
+    color: #fff;
+}
+
+.popup_box .btns .btn2 {
+    margin-left: 20px;
+    background-color: #0f0;
+    color: #fff;
+}
+.popup_box button:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
