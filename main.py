@@ -46,10 +46,10 @@ def main(vehicle_port, model_path):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--vehicle_port", help="Vehicle port", default='/dev/ttyACM0')
-    parser.add_argument("--model_path", help="Model path", default='./models/yolov8n_ncnn_model')
+    parser.add_argument("--vehicle_port", type= str, required=True, help="Vehicle port", default='/dev/ttyACM0')
+    parser.add_argument("--model_path", type= str, required=True, help="Model path", default='./models/yolov8n_ncnn_model')
     args = parser.parse_args()
 
-    main(args.vehicle_port, args.model_path)
+    main(args)
 
 
