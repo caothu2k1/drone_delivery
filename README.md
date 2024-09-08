@@ -39,9 +39,6 @@ cd models
 python test.py
 ```
 ### Stereo Vision
-<img src = "/StereoVision/SGBM.jpg"> 
-
-### Distance measurement
 <img src="/StereoVision/results.jpg"/>
 
 ### Templates
