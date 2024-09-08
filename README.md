@@ -9,7 +9,7 @@ The full project is intended to run on a Raspberry Pi 5 but should work on any p
 - INFO: This project is very much a work in progress. It should be functional but be prepared to dive into the code to fix things.
 - **WARNING**: I take no responsibility if you run any of this code on your own drone. You do so at your own risk.
 ### Hardware design
-<img src = "/hardware_and_3D_design.jpg"> 
+<img src = "/hardware_design.jpg"> 
 
 ### Getting Started
 First, install the ultralytics package from https://docs.ultralytics.com/guides/raspberry-pi/ into your environment.
