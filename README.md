@@ -1,48 +1,63 @@
 ## Autonomous drone for delivery 
+
 This is the source for my autonomous drone for a simple delivery task project.
 
-It makes use of Stereo Vision from two RPi camera v2 modules for detecting people with depth using the YOLOv8 model and then uses a subsumption architecture to send control signals
-via MAVLink to a drone to perform simple delivery missions and avoid obstacles or land automatically on the landing pad.
+It makes use of Stereo Vision from two RPi camera v2 modules for detecting objects with depth using the YOLOv8 model and then uses a subsumption architecture to send control signals via MAVLink to a drone to perform simple delivery missions and avoid obstacles or land automatically on the landing pad.
 
-The full project is intended to run on a Raspberry Pi 5 but should work on any platform that can talk via MAVLink.
+The full project is intended to run on a Raspberry Pi 5 but should work on any platform connecting to 2 cameras simultaneously and talking via MAVLink.
 
 - INFO: This project is very much a work in progress. It should be functional but be prepared to dive into the code to fix things.
-- **WARNING**: I take no responsibility if you run any of this code on your own drone. You do so at your own risk.
+- **WARNING**: I take no responsibility if you run any of this code on your own drone.
+
 ### Hardware design
+
+Below is my entire design for this project including an overview of the connected hardware and a 3D drawing built on Solidworks software.
+
+To start this project. Make sure you have enough hardware for your system, this will ensure the project can continue in the next steps.
+
+- NOTE: The hardware and design can be changed depending on the needs and purposes of your project.
 <img src = "/hardware_design.jpg"> 
 
 ### Getting Started
-First, install the ultralytics package from https://docs.ultralytics.com/guides/raspberry-pi/ into your environment.
 
-In the next step, you need to install dependency packages on your environment. In the first, open your terminal and run:
+First, install the ultralytics package from https://docs.ultralytics.com/guides/raspberry-pi/ into your companion computer (I used Pi5 for this).
+
+Once done, connect the Camera to the Raspberry Pi 5 and try running a simple `python` object detection program with a single camera using the `yolov8.pt` model, You can use another model if there is better performance.
+
 ```bash
 pip install picamera2 
+```
+```bash
+cd models
+python test.py
+```
+
+- Next, export the `yolov8.pt` model to NCNN format to achieve better FPS performance on Raspberry Pi 5 by running the following command in your terminal.
+
+  ```bash
+  cd models
+  python export_model.py
+  ```
+  
+- And then, continue running the `test.py` with NCNN model `yolov8n_ncnn_model` to test the performance.
+
+### Stereo Vision
+
+<img src="/StereoVision/results.jpg"/>
+
+### Templates
+
+<img src="/templates_view.jpg"/>
+
+### Testing
+```bash
 pip install dronkit
 pip install dronekit-sitl 
 pip install pymavlink
 pip install mavproxy
 pip install firebase_admin
 pip install retrying
-pip install matplotlib
 ```
-### Object detection Using YOLOv8 
-Let's start testing the YOLOv8 object detection model with a single camera.
-
-First, export the YOLOv8 model in NCNN format with pretty good FPS.
-```bash
-cd models
-python export_model.py
-```
-Next, run the `test.py` file to test
-```bash
-cd models
-python test.py
-```
-### Stereo Vision
-<img src="/StereoVision/results.jpg"/>
-
-### Templates
-<img src="/templates_view.jpg"/>
 
 
 
