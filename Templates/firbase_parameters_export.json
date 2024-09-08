@@ -1,0 +1,26 @@
+{
+  "images": "path/to/images",
+  "location": {
+    "Home": {
+      "altitude": 3,
+      "lat": 10.0120886,
+      "lng": 105.7502075
+    }
+  },
+  "parameters": {
+    "altitude": -0.54,
+    "battery": 87,
+    "mode": "LAND",
+    "speed": 0,
+    "target": {
+      "compass": 286,
+      "lat": 10.0122158,
+      "lng": 105.7500605
+    }
+  },
+  "status": {
+    "RTL": false,
+    "enable": false,
+    "state": false
+  }
+}
