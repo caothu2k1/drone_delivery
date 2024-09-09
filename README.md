@@ -13,8 +13,8 @@ The full project is intended to run on a Raspberry Pi 5 but should work on any p
 
 To start this project. Make sure you have enough hardware for your system, and you need to fully connect the hardware components, including setting up and configuring your drone to operate stably. To ensure that the project can continue in the next steps.
 
-**Reference**: [Ardupilot](https://ardupilot.org/copter/docs/initial-setup.html)
-**Setup Software**: [MissionPlanner](https://ardupilot.org/planner/)
+- **Reference**: [Ardupilot](https://ardupilot.org/copter/docs/initial-setup.html)
+- **Setup Software**: [MissionPlanner](https://ardupilot.org/planner/)
 
 Below is my entire design for this project including an overview of the connected hardware and a 3D drawing built on Solidworks software.
 
