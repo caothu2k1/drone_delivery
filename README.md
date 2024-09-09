@@ -20,7 +20,7 @@ Below is my entire design for this project including an overview of the connecte
 
 - NOTE: The hardware and design can be changed depending on the needs and purposes of your project.
   
-<img src = "/hardware_design.jpg"> 
+    <img src = "/hardware_design.jpg"> 
 
 ### Getting Started
 
@@ -73,11 +73,11 @@ After successfully calibrating the camera, we can check the accuracy of the ster
 - Distance Mesurement:
 
 
-<img src="/StereoVision/results.jpg"/>
+    <img src="/StereoVision/results.jpg"/>
 
 ### Templates
 
-<img src="/templates_view.jpg"/>
+  <img src="/templates_view.jpg"/>
 
 ### Testing
 ```bash
