@@ -16,7 +16,7 @@ To start this project. Make sure you have enough hardware for your system, and y
 - **Reference**: [Ardupilot](https://ardupilot.org/copter/docs/initial-setup.html)
 - **Setup Software**: [MissionPlanner](https://ardupilot.org/planner/)
 
-Below is my entire design for this project including an overview of the connected hardware and a 3D drawing built on Solidworks software.
+The figure below is my entire design for this project including an overview of the connected hardware and a 3D drawing built on Solidworks.
 
 - NOTE: The hardware and design can be changed depending on the needs and purposes of your project.
   
@@ -24,7 +24,12 @@ Below is my entire design for this project including an overview of the connecte
 
 ### Getting Started
 
-First, install the ultralytics package from https://docs.ultralytics.com/guides/raspberry-pi/ into your companion computer (I used Pi5 for this).
+First, install the ultralytics package from https://docs.ultralytics.com/guides/raspberry-pi/ on Raspberry Pi 5 and you can grab this repo with:
+
+```bash
+cd ~
+git clone https://github.com/caothu2k1/drone_delivery.git
+```
 
 Once done, connect the Camera to the Raspberry Pi 5 and try running a simple `python` object detection program with a single camera using the `yolov8.pt` model, You can use another model if there is better performance.
 
@@ -36,21 +41,21 @@ cd models
 python test.py
 ```
 
-- Next, export the `yolov8.pt` model to NCNN format to achieve better FPS performance on Raspberry Pi 5 by running the following command in your terminal.
+- Next, export the `yolov8.pt` model to **NCNN** format to achieve better FPS performance on Raspberry Pi 5 by running the following command in your terminal.
 
   ```bash
   python export_model.py
   ```
   
-- To test the performance, continue running the `test.py` with NCNN model `yolov8n_ncnn_model`.
+- To test the performance, continue running the `test.py` with **NCNN** model `yolov8n_ncnn_model`.
 
 ### Stereo Vision
 
-Let's start by connecting two Cameras with **RPi 5**, fixing them, and taking pictures of the **Chessboard** at many different angles and positions, do the following:
+Let's start by connecting two Cameras with **RPi 5** and taking pictures of the **Chessboard** at many different angles and positions, do the following:
 
 ```bash
 cd StereoVision
-python StereoVision/chessboard_img.py
+python chessboard_img.py
 ```
 
 Once completed, it is necessary to calibrate both cameras from the previously collected images by running the following command:
@@ -76,22 +81,22 @@ After successfully calibrating the camera, we can check the accuracy of the ster
   cd camera
   python test.py
   ```
-Below are the results obtained from the stereo camera in this project, including building a difference map and measuring the actual distance of the landing_pad at each different distance.
+The figure below shows the results obtained from the stereo camera in this project, including building a Disparity Map and measuring the distance of the landing_pad at each different distance.
 
 <img src="/StereoVision/results.jpg"/>
 
 ### Templates
 
-Instead of using a Ground Station Control like [MissionPlanner](https://ardupilot.org/planner/), I built a simple control website combined with a **4G IoT** system equipped on the Drone. To connect the Website to your drone, you need to add your **adminsdk** in `your-gcs-gg-firebase-adminsdk.json` and your **API_URL** in `Key_API.py` and install `firebase_admin` library, you can run:
+Instead of using a Ground Station Control like [MissionPlanner](https://ardupilot.org/planner/), I built a simple control website combined with a **4G IoT** system equipped on the Drone. To connect the Website to your own drone, you need to add your **adminsdk** in `your-gcs-gg-firebase-adminsdk.json` and your **API_URL** in `Key_API.py` and install `firebase_admin` library, you can run:
 
 ```bash
 pip install firebase_admin
 pip install retrying
 ```
 
-We can remotely control drones via the internet, data will be stored and retrieved on the [Firebase](https://firebase.google.com/) Database, Realtime Database parameters are configured in `firbase_parameters_export.json`
+We can remotely control drones via the internet, data will be stored and retrieved on the [Firebase](https://firebase.google.com/) Database, Realtime Database parameters are configured in `firbase_parameters_export.json`.
 
-Let's enter **GOOGLE_MAP_KEY_API** in `index.html` and **FIREBASE_KEY_API** in `firebase.js`, and open the website on your PC , the website will have the interface as shown below
+Let's enter **GOOGLE_MAP_KEY_API** in `index.html` and **FIREBASE_KEY_API** in `firebase.js`, and open the website on your PC, the website will have the interface as shown below.
 
 <img src="/templates_view.jpg"/>
 
@@ -113,7 +118,7 @@ cd copter
 python test.py
 ```
 
-Now, Let's open the web console and test the main program, do the following:
+Now, Let's open the website control and test the main code, do the following:
 
 ```bash
 python main.py --vehicle_port your_tcp --model_path /path/to/your/model
@@ -123,7 +128,7 @@ Set up a flight trajectory, monitor, and control your drone via the website or [
 
 ### Testing
 
-Now, move to a large area to conduct an outdoor test flight.
+Now, move to a large area to conduct an outdoor test flight with your code.
 
 - **WARNING**: You need to check everything works well before doing this:
   
@@ -131,7 +136,10 @@ Now, move to a large area to conduct an outdoor test flight.
 python main.py --vehicle_port your_port --model_path /path/to/your/model
 ```
 
-Below are some outdoor test images from my project.
+The figure below is some outdoor test images from my project.
 
 <img src="/actual_results.jpg"/>
 
+### License
+
+Licensed under GPLv3.
